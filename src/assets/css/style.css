@@ -1,0 +1,56 @@
+:root {
+  --header-bg-color: #71c9ce;
+  --text-color: #52616b;
+  --body-color: #e3fdfd;
+  --form-color: #cbf1f5;
+  --icon-bg-color: #71c9ce;
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "McLaren", cursive;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--body-color);
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+}
+form {
+  position: relative;
+  width: 480px;
+  margin: 0 auto 0 auto;
+  background: var(--form-color);
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+@media (max-width: 480px) {
+  form {
+    width: 320px;
+  }
+}
+@media (max-width: 360px) {
+  form {
+    width: 280px;
+  }
+}
+form input,
+form textarea {
+  width: 100%;
+  color: var(--text-color);
+  background-color: var(--form-color);
+  border-radius: 3px;
+  outline: none;
+  resize: none;
+}
+form button {
+  position: absolute;
+  bottom: -15px;
+  right: 20px;
+  cursor: pointer;
+  color: var(--body-color);
+  background-color: var(--icon-bg-color);
+  padding: 5px 3px 2px 3px;
+  border-radius: 50%;
+}
